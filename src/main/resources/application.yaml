@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    username: 'dhlsgxhixjwmnn'
+    url: 'jdbc:postgresql://ec2-52-5-167-89.compute-1.amazonaws.com:5432/d28mi0g1842i6e?stringtype=unspecified'
+    password: '69db8ea38414fdff967b063290c751a0e411574f8ba06f62da1329fbe4fcd507'
+  jpa:
+    properties:
+      hibernate:
+        format_sql: 'true'
+    show-sql: 'true'
+
+springdoc:
+  swagger-ui:
+    path: '/swagger-ui.html'
+
+logging:
+  level:
+    org:
+      springframework:
+        web:
+          filter:
+            CommonsRequestLoggingFilter: DEBUG
